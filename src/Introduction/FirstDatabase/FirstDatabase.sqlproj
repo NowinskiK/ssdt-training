@@ -62,7 +62,4 @@
     <Build Include="ViewCustomer.sql" />
     <Build Include="data.sql" />
   </ItemGroup>
-  <ItemGroup>
-    <RefactorLog Include="FirstDatabase.refactorlog" />
-  </ItemGroup>
 </Project>
