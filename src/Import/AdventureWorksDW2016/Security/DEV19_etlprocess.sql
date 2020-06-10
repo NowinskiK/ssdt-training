@@ -1,0 +1,3 @@
+﻿CREATE LOGIN [DEV19\etlprocess]
+    FROM WINDOWS WITH DEFAULT_LANGUAGE = [us_english];
+
