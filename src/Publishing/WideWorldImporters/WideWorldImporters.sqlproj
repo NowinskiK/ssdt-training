@@ -579,4 +579,7 @@
       <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
     </ArtifactReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="WideWorldImporters.publish.xml" />
+  </ItemGroup>
 </Project>
