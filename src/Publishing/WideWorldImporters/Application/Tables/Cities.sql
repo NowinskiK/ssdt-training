@@ -18,7 +18,14 @@ WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE=[Application].[Cities_Archive], DATA
 GO
 CREATE NONCLUSTERED INDEX [FK_Application_Cities_StateProvinceID]
     ON [Application].[Cities]([StateProvinceID] ASC)
+    WITH (FILLFACTOR = 90)
     ON [USERDATA];
+GO
+
+CREATE NONCLUSTERED INDEX [IX_Application_Cities_CityName]
+    ON [Application].[Cities]([CityName] ASC)
+    ON [USERDATA];
+
 
 
 GO
