@@ -20,6 +20,7 @@
     [LastEditedBy]            INT                                         NOT NULL,
     [ValidFrom]               DATETIME2 (7) GENERATED ALWAYS AS ROW START NOT NULL,
     [ValidTo]                 DATETIME2 (7) GENERATED ALWAYS AS ROW END   NOT NULL,
+    [Twitter]               VARCHAR(128) NULL,
     CONSTRAINT [PK_Application_People] PRIMARY KEY CLUSTERED ([PersonID] ASC) ON [USERDATA],
     CONSTRAINT [FK_Application_People_Application_People] FOREIGN KEY ([LastEditedBy]) REFERENCES [Application].[People] ([PersonID]),
     PERIOD FOR SYSTEM_TIME ([ValidFrom], [ValidTo])
