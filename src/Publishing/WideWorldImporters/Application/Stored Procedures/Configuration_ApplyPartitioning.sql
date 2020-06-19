@@ -10,7 +10,12 @@ BEGIN
         PRINT N'Warning: Partitions are not supported in this edition.';
     END ELSE BEGIN -- if partitions are permitted
 
-        BEGIN TRAN;
+        -- Here we will start transaction
+
+
+
+
+        BEGIN TRAN
 
         DECLARE @SQL nvarchar(max) = N'';
 
