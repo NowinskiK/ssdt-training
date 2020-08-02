@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DeploymentReport xmlns="http://schemas.microsoft.com/sqlserver/dac/DeployReport/2012/02">
+    <Alerts />
+    <Operations>
+        <Operation Name="Drop">
+            <Item Value="[Application].[Cities].[NonClusteredIndex-20200802-110247]" Type="SqlIndex" />
+        </Operation>
+    </Operations>
+</DeploymentReport>
