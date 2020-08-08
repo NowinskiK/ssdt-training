@@ -139,11 +139,8 @@
     <Folder Include="DataLoadSimulation\Stored Procedures\" />
     <Folder Include="Application\Stored Procedures\" />
     <Folder Include="Website\Stored Procedures\" />
-    <Folder Include="Integration\" />
-    <Folder Include="Integration\Stored Procedures\" />
     <Folder Include="Website\User Defined Types\" />
     <Folder Include="Sequences\Sequences\" />
-    <Folder Include="Snapshots" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Sales\Tables\Orders.sql">
@@ -424,58 +421,6 @@
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
     </Build>
-    <Build Include="Integration\Stored Procedures\GetTransactionUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Integration\Stored Procedures\GetTransactionTypeUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Integration\Stored Procedures\GetSupplierUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Integration\Stored Procedures\GetStockItemUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Integration\Stored Procedures\GetStockHoldingUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Integration\Stored Procedures\GetSaleUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Integration\Stored Procedures\GetPurchaseUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Integration\Stored Procedures\GetPaymentMethodUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Integration\Stored Procedures\GetOrderUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Integration\Stored Procedures\GetMovementUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Integration\Stored Procedures\GetEmployeeUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Integration\Stored Procedures\GetCustomerUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
-    <Build Include="Integration\Stored Procedures\GetCityUpdates.sql">
-      <AnsiNulls>On</AnsiNulls>
-      <QuotedIdentifier>On</QuotedIdentifier>
-    </Build>
     <Build Include="DataLoadSimulation\Stored Procedures\ReactivateTemporalTablesAfterDataLoad.sql">
       <AnsiNulls>On</AnsiNulls>
       <QuotedIdentifier>On</QuotedIdentifier>
@@ -534,7 +479,6 @@
     <Build Include="Website\User Defined Types\SensorDataList.sql" />
     <Build Include="Security\Application.sql" />
     <Build Include="Security\DataLoadSimulation.sql" />
-    <Build Include="Security\Integration.sql" />
     <Build Include="Security\PowerBI.sql" />
     <Build Include="Security\Purchasing.sql" />
     <Build Include="Security\Reports.sql" />
@@ -572,6 +516,27 @@
     <Build Include="DataLoadSimulation\Stored Procedures\PopulateDataToCurrentDate.sql">
       <SuppressTSqlWarnings>71502</SuppressTSqlWarnings>
     </Build>
+    <Build Include="Application\Stored Procedures\GetCustomerOrderTotalValue.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\WideWorldImportersDW\WideWorldImportersDW.sqlproj">
+      <Name>WideWorldImportersDW</Name>
+      <Project>{064487c5-3979-4390-a9fb-897ee421cb80}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>WideWorldImportersDW</DatabaseSqlCmdVariable>
+      <ServerSqlCmdVariable>srv1020</ServerSqlCmdVariable>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="srv1020">
+      <DefaultValue>SRV1020</DefaultValue>
+      <Value>$(SqlCmdVar__2)</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="WideWorldImportersDW">
+      <DefaultValue>WideWorldImportersDW</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
   </ItemGroup>
   <ItemGroup>
     <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\140\SqlSchemas\master.dacpac">
@@ -579,8 +544,5 @@
       <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
       <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
     </ArtifactReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Snapshots\WideWorldImporters_20200807_20-39-11.dacpac" />
   </ItemGroup>
 </Project>

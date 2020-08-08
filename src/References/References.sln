@@ -7,6 +7,8 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WideWorldImporters", "WideW
 EndProject
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WideWorldImportersDW", "WideWorldImportersDW\WideWorldImportersDW.sqlproj", "{064487C5-3979-4390-A9FB-897EE421CB80}"
 EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "WideWorldImportersExt", "WideWorldImportersExt\WideWorldImportersExt.sqlproj", "{ECB32E84-38C1-45A4-9AA2-045E6E046B6C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,12 @@ Global
 		{064487C5-3979-4390-A9FB-897EE421CB80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{064487C5-3979-4390-A9FB-897EE421CB80}.Release|Any CPU.Build.0 = Release|Any CPU
 		{064487C5-3979-4390-A9FB-897EE421CB80}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{ECB32E84-38C1-45A4-9AA2-045E6E046B6C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECB32E84-38C1-45A4-9AA2-045E6E046B6C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECB32E84-38C1-45A4-9AA2-045E6E046B6C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{ECB32E84-38C1-45A4-9AA2-045E6E046B6C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECB32E84-38C1-45A4-9AA2-045E6E046B6C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECB32E84-38C1-45A4-9AA2-045E6E046B6C}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
