@@ -581,7 +581,9 @@
     </ArtifactReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="SqlSchemaCompare2.scmp" />
     <None Include="Snapshots\WideWorldImporters_20200807_20-39-11.dacpac" />
+    <None Include="SqlSchemaCompare3.scmp" />
+    <None Include="SqlDataCompare4.dcmp" />
+    <None Include="SqlSchemaCompare2.scmp" />
   </ItemGroup>
 </Project>
