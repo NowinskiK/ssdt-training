@@ -14,7 +14,8 @@ BEGIN
                 WHEN sp.SupplierID IS NOT NULL THEN N'Supplier'
                 WHEN sa.SupplierID IS NOT NULL THEN N'Supplier'
            END AS Relationship,
-           COALESCE(c.CustomerName, sp.SupplierName, sa.SupplierName, N'WWI') AS Company
+           COALESCE(c.CustomerName, sp.SupplierName, sa.SupplierName, N'WWI') AS Company,
+           P.Twitter
     FROM [Application].People AS p
     LEFT OUTER JOIN Sales.Customers AS c
     ON c.PrimaryContactPersonID = p.PersonID

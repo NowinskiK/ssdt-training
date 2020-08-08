@@ -10,7 +10,12 @@ BEGIN
         PRINT N'Warning: Partitions are not supported in this edition.';
     END ELSE BEGIN -- if partitions are permitted
 
-        BEGIN TRAN;
+        -- Here we will start transaction
+
+
+
+
+        BEGIN TRAN
 
         DECLARE @SQL nvarchar(max) = N'';
 
@@ -19,7 +24,7 @@ BEGIN
             SET @SQL =  N'
 CREATE PARTITION FUNCTION PF_TransactionDateTime(datetime)
 AS RANGE RIGHT
-FOR VALUES (N''20140101'', N''20150101'', N''20160101'', N''20170101'');';
+FOR VALUES (N''20140101'', N''20150101'', N''20160101'', N''20170101'', N''20180101'');';
             EXECUTE (@SQL);
         END;
 
@@ -28,7 +33,7 @@ FOR VALUES (N''20140101'', N''20150101'', N''20160101'', N''20170101'');';
             SET @SQL =  N'
 CREATE PARTITION FUNCTION PF_TransactionDate(date)
 AS RANGE RIGHT
-FOR VALUES (N''20140101'', N''20150101'', N''20160101'', N''20170101'');';
+FOR VALUES (N''20140101'', N''20150101'', N''20160101'', N''20170101'', N''20180101'');';
             EXECUTE (@SQL);
         END;
 

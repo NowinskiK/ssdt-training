@@ -15,7 +15,7 @@
     [PickingCompletedWhen]        DATETIME2 (7)  NULL,
     [LastEditedBy]                INT            NOT NULL,
     [LastEditedWhen]              DATETIME2 (7)  CONSTRAINT [DF_Sales_Orders_LastEditedWhen] DEFAULT (sysdatetime()) NOT NULL,
-    [OrderDateYM]               as CONVERT(varchar(10), YEAR(OrderDate) * 100 + MONTH(OrderDate))
+    [OrderDateYM]              as (CONVERT([varchar](10),datepart(year,[OrderDate])*(100)+datepart(month,[OrderDate]))),
     CONSTRAINT [PK_Sales_Orders] PRIMARY KEY CLUSTERED ([OrderID] ASC) ON [USERDATA],
     CONSTRAINT [FK_Sales_Orders_Application_People] FOREIGN KEY ([LastEditedBy]) REFERENCES [Application].[People] ([PersonID]),
     CONSTRAINT [FK_Sales_Orders_BackorderOrderID_Sales_Orders] FOREIGN KEY ([BackorderOrderID]) REFERENCES [Sales].[Orders] ([OrderID]),

@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [Application].[Cities] (
     [CityID]                   INT                                         CONSTRAINT [DF_Application_Cities_CityID] DEFAULT (NEXT VALUE FOR [Sequences].[CityID]) NOT NULL,
-    [CityName]                 NVARCHAR (50)                               NOT NULL,
+    [CityName]                 NVARCHAR (80)                               NOT NULL,
     [StateProvinceID]          INT                                         NOT NULL,
     [Location]                 [sys].[geography]                           NULL,
     [LatestRecordedPopulation] BIGINT                                      NULL,
@@ -17,7 +17,7 @@ WITH (SYSTEM_VERSIONING = ON (HISTORY_TABLE=[Application].[Cities_Archive], DATA
 
 GO
 CREATE NONCLUSTERED INDEX [FK_Application_Cities_StateProvinceID]
-    ON [Application].[Cities]([StateProvinceID] ASC)
+    ON [Application].[Cities]([StateProvinceID] ASC) WITH (FILLFACTOR = 80)
     ON [USERDATA];
 
 

@@ -19,8 +19,11 @@
     [OtherLanguages]          NVARCHAR (MAX)  NULL,
     [LastEditedBy]            INT             NOT NULL,
     [ValidFrom]               DATETIME2 (7)   NOT NULL,
-    [ValidTo]                 DATETIME2 (7)   NOT NULL
+    [ValidTo]                 DATETIME2 (7)   NOT NULL,
+    [Twitter]                 VARCHAR (128)   NULL
 ) ON [USERDATA] TEXTIMAGE_ON [USERDATA];
+
+
 
 
 GO
