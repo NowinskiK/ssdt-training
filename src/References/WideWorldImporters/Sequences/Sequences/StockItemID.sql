@@ -1,0 +1,5 @@
+﻿CREATE SEQUENCE [Sequences].[StockItemID]
+    AS INT
+    START WITH 228
+    INCREMENT BY 1;
+
