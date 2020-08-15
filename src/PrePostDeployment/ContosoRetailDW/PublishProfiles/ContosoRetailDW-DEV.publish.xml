@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseName>ContosoRetailDW_DEV</TargetDatabaseName>
+    <DeployScriptFileName>ContosoRetailDW_DEV.sql</DeployScriptFileName>
+    <TargetConnectionString>Data Source=DEV19;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Connect Timeout=60;Encrypt=False;TrustServerCertificate=False</TargetConnectionString>
+    <ProfileVersionNumber>1</ProfileVersionNumber>
+  </PropertyGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="CRM">
+      <Value>CRM</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="EnvironmentCode">
+      <Value>DEV</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="msg">
+      <Value>To jest srodowisko DEV</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="roUser">
+      <Value>kamiln</Value>
+    </SqlCmdVariable>
+    <SqlCmdVariable Include="svcDatawarehouseETL">
+      <Value>DEV19\svcDatawarehouseETL</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
+</Project>
