@@ -8,15 +8,6 @@
     <ProfileVersionNumber>1</ProfileVersionNumber>
   </PropertyGroup>
   <ItemGroup>
-    <SqlCmdVariable Include="CRM">
-      <Value>CRM</Value>
-    </SqlCmdVariable>
-    <SqlCmdVariable Include="EnvironmentCode">
-      <Value>DEV</Value>
-    </SqlCmdVariable>
-    <SqlCmdVariable Include="msg">
-      <Value>To jest srodowisko DEV</Value>
-    </SqlCmdVariable>
     <SqlCmdVariable Include="roUser">
       <Value>kamiln</Value>
     </SqlCmdVariable>

@@ -111,9 +111,7 @@
     <Build Include="dbo\Stored Procedures\P_FactSalesQuota.sql" />
     <Build Include="Security\audit.sql" />
     <Build Include="Security\data.sql" />
-    <PostDeploy Include="Scripts\PostDeployment.sql" />
     <None Include="Scripts\CreateUsers.sql" />
-    <None Include="Scripts\StaticData.sql" />
     <Build Include="data\Stored Procedures\Populate_All.sql" />
   </ItemGroup>
   <ItemGroup>
