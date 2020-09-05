@@ -28,8 +28,6 @@
     [EuropeSeason]           NVARCHAR (50) NULL,
     [NorthAmericaSeason]     NVARCHAR (50) NULL,
     [AsiaSeason]             NVARCHAR (50) NULL,
-
-    [AsiaSeason1]             NVARCHAR (50) NULL,
     CONSTRAINT [PK_DimDate_DateKey] PRIMARY KEY CLUSTERED ([Datekey] ASC)
 );
 

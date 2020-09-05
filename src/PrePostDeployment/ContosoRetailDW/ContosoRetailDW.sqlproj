@@ -126,5 +126,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishProfiles\ContosoRetailDW-DEV.publish.xml" />
+    <None Include="Scripts\SyncCustomers.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Scripts\PreDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Scripts\PostDeployment.sql" />
   </ItemGroup>
 </Project>
