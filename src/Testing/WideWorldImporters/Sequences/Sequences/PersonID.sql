@@ -1,0 +1,5 @@
+﻿CREATE SEQUENCE [Sequences].[PersonID]
+    AS INT
+    START WITH 3262
+    INCREMENT BY 1;
+
