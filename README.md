@@ -1,6 +1,6 @@
 # SSDT Training
 
-| [English Version](#) | [Polish Version](.\pl\README.md) |
+| [English Version](#) | [Polish Version](./pl/README.md) |
 
 All code from full ssdt training.  
 
