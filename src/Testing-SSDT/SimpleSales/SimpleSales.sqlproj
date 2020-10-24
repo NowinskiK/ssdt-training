@@ -56,5 +56,21 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Sales\" />
+    <Folder Include="Sales\Tables\" />
+    <Folder Include="Sales\Stored Procedures\" />
+    <Folder Include="Security\" />
+    <Folder Include="Scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Sales\Tables\Customer.sql" />
+    <Build Include="Sales\Tables\Orders.sql" />
+    <Build Include="Sales\Stored Procedures\uspCancelOrder.sql" />
+    <Build Include="Sales\Stored Procedures\uspFillOrder.sql" />
+    <Build Include="Sales\Stored Procedures\uspNewCustomer.sql" />
+    <Build Include="Sales\Stored Procedures\uspPlaceNewOrder.sql" />
+    <Build Include="Sales\Stored Procedures\uspShowOrderDetails.sql" />
+    <Build Include="Security\Sales.sql" />
+    <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
   </ItemGroup>
 </Project>

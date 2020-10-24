@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30128.74
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SimpleSales", "SimpleSales\SimpleSales.sqlproj", "{989CFF55-EB9A-42BA-A9B8-54A80E41B5D2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleSales.Tests", "SimpleSales.Tests\SimpleSales.Tests.csproj", "{17594D64-05A2-47F5-9A82-33DAA4B12F3F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,6 +19,10 @@ Global
 		{989CFF55-EB9A-42BA-A9B8-54A80E41B5D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{989CFF55-EB9A-42BA-A9B8-54A80E41B5D2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{989CFF55-EB9A-42BA-A9B8-54A80E41B5D2}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{17594D64-05A2-47F5-9A82-33DAA4B12F3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17594D64-05A2-47F5-9A82-33DAA4B12F3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17594D64-05A2-47F5-9A82-33DAA4B12F3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17594D64-05A2-47F5-9A82-33DAA4B12F3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

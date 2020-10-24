@@ -1,0 +1,429 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Sales_uspCancelOrderTest_TestAction.SqlScript" xml:space="preserve">
+    <value>-- ssNoVersion unit test for Sales.uspFillOrder  
+DECLARE @RC AS INT, @CustomerID AS INT, @Amount AS INT, @FilledDate AS DATETIME, @Status AS CHAR (1);  
+DECLARE @CustomerName AS NVARCHAR(40), @OrderID AS INT;  
+
+SELECT @RC = 0,  
+       @CustomerID = 0,  
+       @OrderID = 0,  
+       @CustomerName = N'Fictitious Customer',  
+       @Amount = 100,  
+       @FilledDate = getdate(),  
+       @Status = 'O';  
+
+-- NOTE: Assumes that you inserted a Customer record with CustomerName='Fictitious Customer' in the pre-test script.  
+SELECT @CustomerID = [CustomerID] FROM [Sales].[Customer] WHERE [CustomerName] = @CustomerName;  
+-- Get the most recently added order.  
+SELECT @OrderID = MAX([OrderID]) FROM [Sales].[Orders] WHERE [CustomerID] = @CustomerID;  
+
+-- try to cancel an order for that customer that has already been filled  
+EXECUTE @RC = [Sales].[uspCancelOrder] @OrderID;  
+
+SELECT @RC AS RC;</value>
+  </data>
+  <data name="Sales_uspFillOrderTest_TestAction.SqlScript" xml:space="preserve">
+    <value>-- ssNoVersion unit test for Sales.uspFillOrder  
+DECLARE @RC AS INT, @CustomerID AS INT, @Amount AS INT, @FilledDate AS DATETIME, @Status AS CHAR (1);  
+DECLARE @CustomerName AS NVARCHAR(40), @OrderID AS INT;  
+
+SELECT @RC = 0,  
+       @CustomerID = 0,  
+       @OrderID = 0,  
+       @CustomerName = N'Fictitious Customer',  
+       @Amount = 100,  
+       @FilledDate = getdate(),  
+       @Status = 'O';  
+
+-- NOTE: Assumes that you inserted a Customer record with CustomerName='Fictitious Customer' in the pre-test script.  
+SELECT @CustomerID = [CustomerID] FROM [Sales].[Customer] WHERE [CustomerName] = @CustomerName;  
+-- Get the most recently added order.  
+SELECT @OrderID = MAX([OrderID]) FROM [Sales].[Orders] WHERE [CustomerID] = @CustomerID;  
+
+-- fill an order for that customer  
+EXECUTE @RC = [Sales].[uspFillOrder] @OrderID, @FilledDate;  
+
+-- verify that the [YTDSales] value is correct.  
+SELECT @RC = [YTDSales] FROM [Sales].[Customer] WHERE [CustomerID] = @CustomerID  
+
+SELECT @RC AS RC;</value>
+  </data>
+  <data name="Sales_uspNewCustomerTest_TestAction.SqlScript" xml:space="preserve">
+    <value>-- ssNoVersion unit test for Sales.uspNewCustomer  
+DECLARE @RC AS INT, @CustomerName AS NVARCHAR (40);  
+
+SELECT @RC = 0,  
+       @CustomerName = 'Fictitious Customer';  
+
+EXECUTE @RC = [Sales].[uspNewCustomer] @CustomerName;  
+
+SELECT * FROM [Sales].[Customer];</value>
+  </data>
+  <data name="Sales_uspPlaceNewOrderTest_TestAction.SqlScript" xml:space="preserve">
+    <value>-- ssNoVersion unit test for Sales.uspPlaceNewOrder  
+DECLARE @RC AS INT, @CustomerID AS INT, @Amount AS INT, @OrderDate AS DATETIME, @Status AS CHAR (1);  
+DECLARE @CustomerName AS NVARCHAR(40);  
+
+SELECT @RC = 0,  
+       @CustomerID = 0,  
+       @CustomerName = N'Fictitious Customer',  
+       @Amount = 100,  
+       @OrderDate = getdate(),  
+       @Status = 'O';  
+
+-- NOTE: Assumes that you inserted a Customer record with CustomerName='Fictitious Customer' in the pre-test script.  
+SELECT @CustomerID = [CustomerID] FROM [Sales].[Customer] WHERE [CustomerName] = @CustomerName;  
+
+-- place an order for that customer  
+EXECUTE @RC = [Sales].[uspPlaceNewOrder] @CustomerID, @Amount, @OrderDate, @Status;  
+
+-- verify that the YTDOrders value is correct.  
+SELECT @RC = [YTDOrders] FROM [Sales].[Customer] WHERE [CustomerID] = @CustomerID  
+
+SELECT @RC AS RC</value>
+  </data>
+  <metadata name="expectedSchemaCondition1.Configuration" xml:space="preserve">
+    <value>Press to configure</value>
+  </metadata>
+  <metadata name="checksumCondition1.Configuration" xml:space="preserve">
+    <value>Press to configure</value>
+  </metadata>
+  <data name="Sales_uspShowOrderDetailsTest_TestAction.SqlScript" xml:space="preserve">
+    <value>-- ssNoVersion unit test for Sales.uspFillOrder  
+DECLARE @RC AS INT, @CustomerID AS INT, @Amount AS INT, @FilledDate AS DATETIME, @Status AS CHAR (1);  
+DECLARE @CustomerName AS NVARCHAR(40), @OrderID AS INT;  
+
+SELECT @RC = 0,  
+       @CustomerID = 0,  
+       @OrderID = 0,  
+       @CustomerName = N'Fictitious Customer',  
+       @Amount = 100,  
+       @FilledDate = getdate(),  
+       @Status = 'O';  
+
+-- NOTE: Assumes that you inserted a Customer record with CustomerName='Fictitious Customer' in the pre-test script.  
+SELECT @CustomerID = [CustomerID] FROM [Sales].[Customer] WHERE [CustomerName] = @CustomerName;  
+
+-- fill an order for that customer  
+EXECUTE @RC = [Sales].[uspShowOrderDetails] @CustomerID;  
+
+SELECT @RC AS RC;</value>
+  </data>
+  <metadata name="expectedSchemaCondition1.Configuration" xml:space="preserve">
+    <value>Press to configure</value>
+  </metadata>
+  <data name="expectedSchemaCondition1.Schema" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAE5TeXN0ZW0uRGF0YSwgVmVyc2lvbj00LjAuMC4wLCBDdWx0dXJl
+        PW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAABNTeXN0ZW0uRGF0YS5E
+        YXRhU2V0AwAAABdEYXRhU2V0LlJlbW90aW5nVmVyc2lvbglYbWxTY2hlbWELWG1sRGlmZkdyYW0DAQEO
+        U3lzdGVtLlZlcnNpb24CAAAACQMAAAAGBAAAAMkKPD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0i
+        dXRmLTE2Ij8+DQo8eHM6c2NoZW1hIGlkPSJOZXdEYXRhU2V0IiB4bWxucz0iIiB4bWxuczp4cz0iaHR0
+        cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOm1zZGF0YT0idXJuOnNjaGVtYXMtbWlj
+        cm9zb2Z0LWNvbTp4bWwtbXNkYXRhIj4NCiAgPHhzOmVsZW1lbnQgbmFtZT0iTmV3RGF0YVNldCIgbXNk
+        YXRhOklzRGF0YVNldD0idHJ1ZSIgbXNkYXRhOkxvY2FsZT0iZW4tR0IiPg0KICAgIDx4czpjb21wbGV4
+        VHlwZT4NCiAgICAgIDx4czpjaG9pY2UgbWluT2NjdXJzPSIwIiBtYXhPY2N1cnM9InVuYm91bmRlZCI+
+        DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IlRhYmxlIj4NCiAgICAgICAgICA8eHM6Y29tcGxleFR5
+        cGU+DQogICAgICAgICAgICA8eHM6c2VxdWVuY2U+DQogICAgICAgICAgICAgIDx4czplbGVtZW50IG5h
+        bWU9IkN1c3RvbWVyTmFtZSIgdHlwZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFtZXNwYWNlPSIi
+        IG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0iQ29sdW1uMSIg
+        dHlwZT0ieHM6ZGF0ZVRpbWUiIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIwIiAv
+        Pg0KICAgICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJDb2x1bW4yIiB0eXBlPSJ4czpkYXRlVGlt
+        ZSIgbXNkYXRhOnRhcmdldE5hbWVzcGFjZT0iIiBtaW5PY2N1cnM9IjAiIC8+DQogICAgICAgICAgICAg
+        IDx4czplbGVtZW50IG5hbWU9IlN0YXR1cyIgdHlwZT0ieHM6c3RyaW5nIiBtc2RhdGE6dGFyZ2V0TmFt
+        ZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgICAgPHhzOmVsZW1lbnQgbmFtZT0i
+        QW1vdW50IiB0eXBlPSJ4czppbnQiIG1zZGF0YTp0YXJnZXROYW1lc3BhY2U9IiIgbWluT2NjdXJzPSIw
+        IiAvPg0KICAgICAgICAgICAgPC94czpzZXF1ZW5jZT4NCiAgICAgICAgICA8L3hzOmNvbXBsZXhUeXBl
+        Pg0KICAgICAgICA8L3hzOmVsZW1lbnQ+DQogICAgICAgIDx4czplbGVtZW50IG5hbWU9IlRhYmxlMSI+
+        DQogICAgICAgICAgPHhzOmNvbXBsZXhUeXBlPg0KICAgICAgICAgICAgPHhzOnNlcXVlbmNlPg0KICAg
+        ICAgICAgICAgICA8eHM6ZWxlbWVudCBuYW1lPSJSQyIgdHlwZT0ieHM6aW50IiBtc2RhdGE6dGFyZ2V0
+        TmFtZXNwYWNlPSIiIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAgICAgIDwveHM6c2VxdWVuY2U+DQog
+        ICAgICAgICAgPC94czpjb21wbGV4VHlwZT4NCiAgICAgICAgPC94czplbGVtZW50Pg0KICAgICAgPC94
+        czpjaG9pY2U+DQogICAgPC94czpjb21wbGV4VHlwZT4NCiAgPC94czplbGVtZW50Pg0KPC94czpzY2hl
+        bWE+BgUAAACAATxkaWZmZ3I6ZGlmZmdyYW0geG1sbnM6bXNkYXRhPSJ1cm46c2NoZW1hcy1taWNyb3Nv
+        ZnQtY29tOnhtbC1tc2RhdGEiIHhtbG5zOmRpZmZncj0idXJuOnNjaGVtYXMtbWljcm9zb2Z0LWNvbTp4
+        bWwtZGlmZmdyYW0tdjEiIC8+BAMAAAAOU3lzdGVtLlZlcnNpb24EAAAABl9NYWpvcgZfTWlub3IGX0J1
+        aWxkCV9SZXZpc2lvbgAAAAAICAgIAgAAAAAAAAD//////////ws=
+</value>
+  </data>
+  <metadata name="checksumCondition1.Configuration" xml:space="preserve">
+    <value>Press to configure</value>
+  </metadata>
+  <data name="Sales_uspPlaceNewOrderTest_PretestAction.SqlScript" xml:space="preserve">
+    <value>/*  
+Add Transact-SQL statements here that you want to run before  
+the test script is run.  
+*/  
+-- Add a customer for this test with the name 'Fictitious Customer'  
+DECLARE @NewCustomerID AS INT, @CustomerID AS INT, @RC AS INT, @CustomerName AS NVARCHAR (40);  
+
+SELECT @RC = 0,  
+       @NewCustomerID = 0,  
+   @CustomerID = 0,  
+       @CustomerName = N'Fictitious Customer';  
+
+IF NOT EXISTS(SELECT * FROM [Sales].[Customer] WHERE CustomerName = @CustomerName)  
+BEGIN  
+EXECUTE @NewCustomerID = [Sales].[uspNewCustomer] @CustomerName;  
+END  
+
+-- NOTE: Assumes that you inserted a Customer record with CustomerName='Fictitious Customer' in the pre-test script.  
+SELECT @CustomerID = [CustomerID] FROM [Sales].[Customer] WHERE [CustomerName] = @CustomerName;  
+
+-- delete any old records in the Orders table and clear out the YTD Sales/Orders fields  
+DELETE from [Sales].[Orders] WHERE [CustomerID] = @CustomerID;  
+UPDATE [Sales].[Customer] SET YTDOrders = 0, YTDSales = 0 WHERE [CustomerID] = @CustomerID;
+
+</value>
+  </data>
+  <data name="Sales_uspFillOrderTest_PretestAction.SqlScript" xml:space="preserve">
+    <value>/*  
+Add Transact-SQL statements here that you want to run before  
+the test script is run.  
+*/  
+BEGIN TRANSACTION  
+
+-- Add a customer for this test with the name 'CustomerB'  
+DECLARE @NewCustomerID AS INT, @RC AS INT, @CustomerName AS NVARCHAR (40);  
+
+SELECT @RC = 0,  
+       @NewCustomerID = 0,  
+       @CustomerName = N'Fictitious Customer';  
+
+IF NOT EXISTS(SELECT * FROM [Sales].[Customer] WHERE CustomerName = @CustomerName)  
+BEGIN  
+EXECUTE @NewCustomerID = [Sales].[uspNewCustomer] @CustomerName;  
+END  
+
+DECLARE @CustomerID AS INT, @Amount AS INT, @OrderDate AS DATETIME, @Status AS CHAR (1);  
+
+SELECT @RC = 0,  
+       @CustomerID = 0,  
+       @CustomerName = N'Fictitious Customer',  
+       @Amount = 100,  
+       @OrderDate = getdate(),  
+       @Status = 'O';  
+
+-- NOTE: Assumes that you inserted a Customer record with CustomerName='Fictitious Customer' in the pre-test script.  
+SELECT @CustomerID = [CustomerID] FROM [Sales].[Customer] WHERE [CustomerName] = @CustomerName;  
+
+-- delete any old records in the Orders table and clear out the YTD Sales/Orders fields  
+DELETE from [Sales].[Orders] WHERE [CustomerID] = @CustomerID;  
+UPDATE [Sales].[Customer] SET YTDOrders = 0, YTDSales = 0 WHERE [CustomerID] = @CustomerID;  
+
+-- place an order for that customer  
+EXECUTE @RC = [Sales].[uspPlaceNewOrder] @CustomerID, @Amount, @OrderDate, @Status;  
+
+COMMIT TRANSACTION</value>
+  </data>
+  <data name="Sales_uspShowOrderDetailsTest_PretestAction.SqlScript" xml:space="preserve">
+    <value>/*  
+Add Transact-SQL statements here to run before the test script is run.  
+*/  
+BEGIN TRANSACTION  
+
+-- Add a customer for this test with the name 'FictitiousCustomer'  
+DECLARE @NewCustomerID AS INT, @RC AS INT, @CustomerName AS NVARCHAR (40);  
+
+SELECT @RC = 0,  
+       @NewCustomerID = 0,  
+       @CustomerName = N'Fictitious Customer';  
+
+IF NOT EXISTS(SELECT * FROM [Sales].[Customer] WHERE CustomerName = @CustomerName)  
+BEGIN  
+EXECUTE @NewCustomerID = [Sales].[uspNewCustomer] @CustomerName;  
+END  
+
+DECLARE @CustomerID AS INT, @Amount AS INT, @OrderDate AS DATETIME, @Status AS CHAR (1);  
+
+SELECT @RC = 0,  
+       @CustomerID = 0,  
+       @CustomerName = N'Fictitious Customer',  
+       @OrderDate = getdate(),  
+       @Status = 'O';  
+
+-- NOTE: Assumes that you inserted a Customer record with CustomerName='Fictitious Customer' in the pre-test script.  
+SELECT @CustomerID = [CustomerID] FROM [Sales].[Customer] WHERE [CustomerName] = @CustomerName;  
+
+-- delete any old records in the Orders table and clear out the YTD Sales/Orders fields  
+DELETE from [Sales].[Orders] WHERE [CustomerID] = @CustomerID;  
+UPDATE [Sales].[Customer] SET YTDOrders = 0, YTDSales = 0 WHERE [CustomerID] = @CustomerID;  
+
+-- place 3 orders for that customer  
+EXECUTE @RC = [Sales].[uspPlaceNewOrder] @CustomerID, 100, @OrderDate, @Status;  
+EXECUTE @RC = [Sales].[uspPlaceNewOrder] @CustomerID, 50, @OrderDate, @Status;  
+EXECUTE @RC = [Sales].[uspPlaceNewOrder] @CustomerID, 5, @OrderDate, @Status;  
+
+COMMIT TRANSACTION</value>
+  </data>
+  <data name="testInitializeAction.SqlScript" xml:space="preserve">
+    <value>DELETE FROM Sales.Orders;
+DELETE FROM Sales.Customer;
+</value>
+  </data>
+  <data name="Sales_uspCancelOrderTest_PretestAction.SqlScript" xml:space="preserve">
+    <value>/*  
+Add Transact-SQL statements here to run before the test script is run.  
+*/  
+BEGIN TRANSACTION  
+
+-- Add a customer for this test with the name 'CustomerB'  
+DECLARE @NewCustomerID AS INT, @RC AS INT, @CustomerName AS NVARCHAR (40);  
+
+SELECT @RC = 0,  
+       @NewCustomerID = 0,  
+       @CustomerName = N'Fictitious Customer';  
+
+IF NOT EXISTS(SELECT * FROM [Sales].[Customer] WHERE CustomerName = @CustomerName)  
+BEGIN  
+EXECUTE @NewCustomerID = [Sales].[uspNewCustomer] @CustomerName;  
+END  
+
+DECLARE @CustomerID AS INT, @Amount AS INT, @OrderDate AS DATETIME, @FilledDate AS DATETIME, @Status AS CHAR (1), @OrderID AS INT;  
+
+SELECT @RC = 0,  
+       @CustomerID = 0,  
+   @OrderID = 0,  
+       @CustomerName = N'Fictitious Customer',  
+       @Amount = 100,  
+       @OrderDate = getdate(),  
+   @FilledDate = getdate(),  
+       @Status = 'O';  
+
+-- NOTE: Assumes that you inserted a Customer record with CustomerName='Fictitious Customer' in the pre-test script.  
+SELECT @CustomerID = [CustomerID] FROM [Sales].[Customer] WHERE [CustomerName] = @CustomerName;  
+
+-- delete any old records in the Orders table and clear out the YTD Sales/Orders fields  
+DELETE from [Sales].[Orders] WHERE [CustomerID] = @CustomerID;  
+UPDATE [Sales].[Customer] SET YTDOrders = 0, YTDSales = 0 WHERE [CustomerID] = @CustomerID;  
+
+-- place an order for that customer  
+EXECUTE @OrderID = [Sales].[uspPlaceNewOrder] @CustomerID, @Amount, @OrderDate, @Status;  
+
+-- fill the order for that customer  
+EXECUTE @RC = [Sales].[uspFillOrder] @OrderID, @FilledDate;  
+
+COMMIT TRANSACTION</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>
