@@ -73,4 +73,7 @@
     <Build Include="Security\Sales.sql" />
     <None Include="Scripts\ScriptsIgnoredOnImport.sql" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="SimpleSales.publish.xml" />
+  </ItemGroup>
 </Project>
