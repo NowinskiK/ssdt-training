@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>tSQLt_Framework</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{30b91c36-1416-4fde-909f-0e729c9192e0}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>tSQLt_Framework</RootNamespace>
+    <AssemblyName>tSQLt_Framework</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>Latin1_General_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="tSQLt\" />
+    <Folder Include="tSQLt\Tables\" />
+    <Folder Include="tSQLt\Views\" />
+    <Folder Include="tSQLt\Functions\" />
+    <Folder Include="tSQLt\Stored Procedures\" />
+    <Folder Include="AcceleratorTests\" />
+    <Folder Include="AcceleratorTests\Stored Procedures\" />
+    <Folder Include="tSQLt\User Defined Types\" />
+    <Folder Include="Assemblies\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="tSQLt\Tables\Private_NullCellTable.sql" />
+    <Build Include="tSQLt\Tables\Private_NewTestClassList.sql" />
+    <Build Include="tSQLt\Tables\TestResult.sql" />
+    <Build Include="tSQLt\Tables\Private_AssertEqualsTableSchema_Actual.sql" />
+    <Build Include="tSQLt\Tables\TestMessage.sql" />
+    <Build Include="tSQLt\Tables\Private_AssertEqualsTableSchema_Expected.sql" />
+    <Build Include="tSQLt\Tables\Run_LastExecution.sql" />
+    <Build Include="tSQLt\Tables\Private_ExpectException.sql" />
+    <Build Include="tSQLt\Tables\Private_Configurations.sql" />
+    <Build Include="tSQLt\Tables\CaptureOutputLog.sql" />
+    <Build Include="tSQLt\Tables\Private_RenamedObjectLog.sql" />
+    <Build Include="tSQLt\Views\Private_SysIndexes.sql" />
+    <Build Include="tSQLt\Views\Private_SysTypes.sql" />
+    <Build Include="tSQLt\Views\TestClasses.sql" />
+    <Build Include="tSQLt\Views\Tests.sql" />
+    <Build Include="tSQLt\Functions\Private_GetCommaSeparatedColumnList.sql" />
+    <Build Include="tSQLt\Functions\Private_SqlVariantFormatter.sql" />
+    <Build Include="tSQLt\Functions\Private_QuoteClassNameForNewTestClass.sql" />
+    <Build Include="tSQLt\Functions\GetTestResultFormatter.sql" />
+    <Build Include="tSQLt\Functions\Private_GetLastTestNameIfNotProvided.sql" />
+    <Build Include="tSQLt\Functions\Private_GetCleanSchemaName.sql" />
+    <Build Include="tSQLt\Functions\Private_GetCleanObjectName.sql" />
+    <Build Include="tSQLt\Functions\Private_GetOriginalTableName.sql" />
+    <Build Include="tSQLt\Functions\Private_GetQuotedFullName.sql" />
+    <Build Include="tSQLt\Functions\Private_GetSchemaId.sql" />
+    <Build Include="tSQLt\Functions\Private_IsTestClass.sql" />
+    <Build Include="tSQLt\Functions\Private_GetAnnotationList.sql" />
+    <Build Include="tSQLt\Functions\Private_ListTestAnnotations.sql" />
+    <Build Include="tSQLt\Functions\Private_PrepareTestResultForOutput.sql" />
+    <Build Include="tSQLt\Functions\Private_SqlVersion.sql" />
+    <Build Include="tSQLt\Functions\Private_SplitSqlVersion.sql" />
+    <Build Include="tSQLt\Functions\Info.sql" />
+    <Build Include="tSQLt\Functions\Private_ScriptIndex.sql" />
+    <Build Include="tSQLt\Functions\Private_GetForeignKeyParColumns.sql" />
+    <Build Include="tSQLt\Functions\Private_GetForeignKeyRefColumns.sql" />
+    <Build Include="tSQLt\Functions\Private_GetForeignKeyDefinition.sql" />
+    <Build Include="tSQLt\Functions\Private_GetQuotedTableNameForConstraint.sql" />
+    <Build Include="tSQLt\Functions\Private_FindConstraint.sql" />
+    <Build Include="tSQLt\Functions\Private_ResolveApplyConstraintParameters.sql" />
+    <Build Include="tSQLt\Functions\Private_GetConstraintType.sql" />
+    <Build Include="tSQLt\Functions\Private_GetDataTypeOrComputedColumnDefinition.sql" />
+    <Build Include="tSQLt\Functions\Private_GetIdentityDefinition.sql" />
+    <Build Include="tSQLt\Functions\Private_GetDefaultConstraintDefinition.sql" />
+    <Build Include="tSQLt\Functions\Private_GetUniqueConstraintDefinition.sql" />
+    <Build Include="tSQLt\Functions\Private_GetFullTypeName.sql" />
+    <Build Include="tSQLt\Functions\%40tSQLt_SkipTest.sql" />
+    <Build Include="tSQLt\Functions\%40tSQLt_MinSqlMajorVersion.sql" />
+    <Build Include="tSQLt\Functions\%40tSQLt_MaxSqlMajorVersion.sql" />
+    <Build Include="tSQLt\Functions\TestCaseSummary.sql" />
+    <Build Include="tSQLt\Functions\Private_ResolveFakeTableNamesForBackwardCompatibility.sql" />
+    <Build Include="tSQLt\Functions\Private_GetOriginalTableInfo.sql" />
+    <Build Include="tSQLt\Functions\F_Num.sql" />
+    <Build Include="tSQLt\Functions\Private_ResolveSchemaName.sql" />
+    <Build Include="tSQLt\Functions\Private_ResolveObjectName.sql" />
+    <Build Include="tSQLt\Functions\Private_ResolveName.sql" />
+    <Build Include="tSQLt\Functions\Private_GetConfiguration.sql" />
+    <Build Include="tSQLt\Stored Procedures\RemoveObject.sql" />
+    <Build Include="tSQLt\Stored Procedures\RemoveObjectIfExists.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_CleanTestResult.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_Init.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_ProcessTestAnnotations.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_GetSetupProcedureName.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_RunTest.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_RunTestClass.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_Run.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_RunCursor.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_GetCursorForRunAll.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_RunAll.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_GetCursorForRunNew.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_RunNew.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_RunMethodHandler.sql" />
+    <Build Include="tSQLt\Stored Procedures\RunAll.sql" />
+    <Build Include="tSQLt\Stored Procedures\RunNew.sql" />
+    <Build Include="tSQLt\Stored Procedures\RunTest.sql" />
+    <Build Include="tSQLt\Stored Procedures\Run.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_InputBuffer.sql" />
+    <Build Include="tSQLt\Stored Procedures\RunC.sql" />
+    <Build Include="tSQLt\Stored Procedures\RunWithXmlResults.sql" />
+    <Build Include="tSQLt\Stored Procedures\RunWithNullResults.sql" />
+    <Build Include="tSQLt\Stored Procedures\DefaultResultFormatter.sql" />
+    <Build Include="tSQLt\Stored Procedures\XmlResultFormatter.sql" />
+    <Build Include="tSQLt\Stored Procedures\NullTestResultFormatter.sql" />
+    <Build Include="tSQLt\Stored Procedures\RunTestClass.sql" />
+    <Build Include="tSQLt\Stored Procedures\ExpectException.sql" />
+    <Build Include="tSQLt\Stored Procedures\ExpectNoException.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_RemoveSchemaBinding.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_RemoveSchemaBoundReferences.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_ApplyCheckConstraint.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_ApplyForeignKeyConstraint.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_ApplyUniqueConstraint.sql" />
+    <Build Include="tSQLt\Stored Procedures\ApplyConstraint.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_ValidateFakeTableParameters.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_CreateFakeOfTable.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_MarkFakeTable.sql" />
+    <Build Include="tSQLt\Stored Procedures\FakeTable.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_CreateProcedureSpy.sql" />
+    <Build Include="tSQLt\Stored Procedures\SpyProcedure.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_CreateResultTableForCompareTables.sql" />
+    <Build Include="tSQLt\Stored Procedures\DropClass.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_ValidateThatAllDataTypesInTableAreSupported.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_GetAssemblyKeyBytes.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_CompareTablesFailIfUnequalRowsExists.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_GetSQLProductMajorVersion.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_CompareTables.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_EnableCLR.sql" />
+    <Build Include="tSQLt\Stored Procedures\RemoveAssemblyKey.sql" />
+    <Build Include="tSQLt\Stored Procedures\InstallAssemblyKey.sql" />
+    <Build Include="tSQLt\Stored Procedures\AssertObjectExists.sql" />
+    <Build Include="tSQLt\Stored Procedures\PrepareServer.sql" />
+    <Build Include="tSQLt\Stored Procedures\AssertObjectDoesNotExist.sql" />
+    <Build Include="tSQLt\Stored Procedures\AssertEqualsString.sql" />
+    <Build Include="tSQLt\Stored Procedures\AssertEqualsTable.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_ResetNewTestClassList.sql" />
+    <Build Include="tSQLt\Stored Procedures\StubRecord.sql" />
+    <Build Include="tSQLt\Stored Procedures\AssertLike.sql" />
+    <Build Include="tSQLt\Stored Procedures\AssertNotEquals.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_DisallowOverwritingNonTestSchema.sql" />
+    <Build Include="tSQLt\Stored Procedures\AssertEmptyTable.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_MarkSchemaAsTestClass.sql" />
+    <Build Include="tSQLt\Stored Procedures\ApplyTrigger.sql" />
+    <Build Include="tSQLt\Stored Procedures\NewTestClass.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_ValidateObjectsCompatibleWithFakeFunction.sql" />
+    <Build Include="tSQLt\Stored Procedures\Fail.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_CreateFakeFunction.sql" />
+    <Build Include="tSQLt\Stored Procedures\FakeFunction.sql" />
+    <Build Include="tSQLt\Stored Procedures\RenameClass.sql" />
+    <Build Include="tSQLt\Stored Procedures\AssertEqualsTableSchema.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_Print.sql" />
+    <Build Include="tSQLt\Stored Procedures\AssertStringIn.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_PrintXML.sql" />
+    <Build Include="tSQLt\Stored Procedures\SetSummaryError.sql" />
+    <Build Include="tSQLt\Stored Procedures\GetNewTranName.sql" />
+    <Build Include="tSQLt\Stored Procedures\Reset.sql" />
+    <Build Include="tSQLt\Stored Procedures\SetTestResultFormatter.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_SkipTestAnnotationHelper.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_OutputTestResults.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_SaveTestNameForSession.sql" />
+    <Build Include="tSQLt\Stored Procedures\RemoveExternalAccessKey.sql" />
+    <Build Include="tSQLt\Stored Procedures\InstallExternalAccessKey.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_ValidateProcedureCanBeUsedWithSpyProcedure.sql" />
+    <Build Include="tSQLt\Stored Procedures\AssertEquals.sql" />
+    <Build Include="AcceleratorTests\Stored Procedures\test ready for experimentation if 2 particles.sql" />
+    <Build Include="AcceleratorTests\Stored Procedures\test we are not ready for experimentation if there is only 1 particle.sql" />
+    <Build Include="AcceleratorTests\Stored Procedures\test no particles are in a rectangle when there are no particles in the table.sql" />
+    <Build Include="AcceleratorTests\Stored Procedures\test a particle within the rectangle is returned.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_SetFakeViewOn_SingleView.sql" />
+    <Build Include="AcceleratorTests\Stored Procedures\test a particle within the rectangle is returned with an Id, Point Location and Value.sql" />
+    <Build Include="tSQLt\Stored Procedures\SetFakeViewOn.sql" />
+    <Build Include="AcceleratorTests\Stored Procedures\test a particle is included only if it fits inside the boundaries of the rectangle.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_SetFakeViewOff_SingleView.sql" />
+    <Build Include="AcceleratorTests\Stored Procedures\test email is sent if we detected a higgs-boson.sql" />
+    <Build Include="tSQLt\Stored Procedures\SetFakeViewOff.sql" />
+    <Build Include="AcceleratorTests\Stored Procedures\test email is not sent if we detected something other than higgs-boson.sql" />
+    <Build Include="AcceleratorTests\Stored Procedures\test status message includes the number of particles.sql" />
+    <Build Include="AcceleratorTests\Stored Procedures\test foreign key violated if Particle color is not in Color table.sql" />
+    <Build Include="AcceleratorTests\Stored Procedures\test foreign key is not violated if Particle color is in Color table.sql" />
+    <Build Include="tSQLt\Stored Procedures\Uninstall.sql" />
+    <Build Include="tSQLt\Stored Procedures\EnableExternalAccess.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_SetConfiguration.sql" />
+    <Build Include="tSQLt\Stored Procedures\SetVerbose.sql" />
+    <Build Include="tSQLt\Stored Procedures\LogCapturedOutput.sql" />
+    <Build Include="tSQLt\Stored Procedures\TableToText.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_MarkObjectBeforeRename.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_RenameObjectToUniqueName.sql" />
+    <Build Include="tSQLt\Stored Procedures\Private_RenameObjectToUniqueNameUsingObjectId.sql" />
+    <Build Include="tSQLt\Stored Procedures\ResultSetFilter.sql" />
+    <Build Include="tSQLt\Stored Procedures\AssertResultSetsHaveSameMetaData.sql" />
+    <Build Include="tSQLt\Stored Procedures\NewConnection.sql" />
+    <Build Include="tSQLt\Stored Procedures\CaptureOutput.sql" />
+    <Build Include="tSQLt\Stored Procedures\SuppressOutput.sql" />
+    <Build Include="tSQLt\User Defined Types\Private.sql" />
+    <Build Include="tSQLt\User Defined Types\AssertStringTable.sql" />
+    <Build Include="Security\AcceleratorTests.sql" />
+    <Build Include="Security\tSQLt.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assemblies\tSQLtCLR.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="tSQLtCLR">
+      <HintPath>Assemblies\tSQLtCLR.dll</HintPath>
+      <SqlAssemblyName>tSQLtCLR</SqlAssemblyName>
+      <IsModelAware>True</IsModelAware>
+      <GenerateSqlClrDdl>False</GenerateSqlClrDdl>
+      <SqlOwnerName>dbo</SqlOwnerName>
+      <SqlPermissionSet>EXTERNAL_ACCESS</SqlPermissionSet>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ArtifactReference Include="$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac">
+      <HintPath>$(DacPacRootPath)\Extensions\Microsoft\SQLDB\Extensions\SqlServer\130\SqlSchemas\master.dacpac</HintPath>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseVariableLiteralValue>master</DatabaseVariableLiteralValue>
+    </ArtifactReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\tSQLt_Example\tSQLt_Example.sqlproj">
+      <Name>tSQLt_Example</Name>
+      <Project>{5168240c-5f3f-4d4e-8967-1610e16483ea}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
