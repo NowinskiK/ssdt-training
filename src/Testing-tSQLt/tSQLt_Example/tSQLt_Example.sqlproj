@@ -77,5 +77,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assemblies\tSQLtCLR.dll" />
+    <None Include="tSQLt_Example.publish.xml" />
   </ItemGroup>
 </Project>

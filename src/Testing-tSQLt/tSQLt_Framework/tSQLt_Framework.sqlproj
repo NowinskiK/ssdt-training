@@ -248,6 +248,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assemblies\tSQLtCLR.dll" />
+    <None Include="tSQLt_Framework.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="tSQLtCLR">
