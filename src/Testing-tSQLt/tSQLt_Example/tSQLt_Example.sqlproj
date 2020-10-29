@@ -78,14 +78,4 @@
   <ItemGroup>
     <None Include="Assemblies\tSQLtCLR.dll" />
   </ItemGroup>
-  <ItemGroup>
-    <Reference Include="tSQLtCLR">
-      <HintPath>Assemblies\tSQLtCLR.dll</HintPath>
-      <SqlAssemblyName>tSQLtCLR</SqlAssemblyName>
-      <IsModelAware>True</IsModelAware>
-      <GenerateSqlClrDdl>False</GenerateSqlClrDdl>
-      <SqlOwnerName>dbo</SqlOwnerName>
-      <SqlPermissionSet>EXTERNAL_ACCESS</SqlPermissionSet>
-    </Reference>
-  </ItemGroup>
 </Project>
