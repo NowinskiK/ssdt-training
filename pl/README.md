@@ -92,16 +92,16 @@ Czas trwania: 152 min.
 * J. Quiz
 
 ## Moduł 7: Testy jednostkowe
-Czas trwania: ... min.
+Czas trwania: 159 min.
 * A. Wprowadzenie
-* B. Unit Test
-* C. Rodzaje testów i narzędzia
-* D. Zasady budowania testów
-* E. Unit Test - budowanie z Visual Studio
-* F. Unit Test - budowanie z tSQLt (3 testy)
-* G. Uruchamianie testów i raportowanie wyników
-* H. Podsumowanie
-* I. Quiz
+  * Unit Test
+  * Rodzaje testów i narzędzia
+  * Zasady budowania testów
+* B. [Unit Test - budowanie z Visual Studio](../src/Testing-SSDT/)
+* C. [Unit Test - budowanie z tSQLt](../src/Testing-tSQLt/)
+* D. Uruchamianie testów i raportowanie wyników
+* E. Podsumowanie
+* F. Quiz
 
 ## Moduł 8: Tips, Tricks & Troubleshooting
 Czas trwania: ... min.
