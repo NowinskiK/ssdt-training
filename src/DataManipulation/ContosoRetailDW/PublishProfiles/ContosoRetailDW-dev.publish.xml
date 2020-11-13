@@ -12,5 +12,6 @@
     <DatabaseMaximumSize>2</DatabaseMaximumSize>
     <IncludeTransactionalScripts>False</IncludeTransactionalScripts>
     <ScriptDatabaseOptions>False</ScriptDatabaseOptions>
+    <GenerateSmartDefaults>True</GenerateSmartDefaults>
   </PropertyGroup>
 </Project>

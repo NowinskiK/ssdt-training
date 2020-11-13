@@ -10,6 +10,6 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
-
+:r ".\S0002_Split_EmailAddress_post.sql"
 
 -------------------------This is the end of Post-Depoloyment script -------------------
