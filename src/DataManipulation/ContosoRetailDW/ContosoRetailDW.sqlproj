@@ -66,9 +66,6 @@
     <Folder Include="dbo\Tables\" />
     <Folder Include="dbo\Views\" />
     <Folder Include="dbo\Stored Procedures\" />
-    <Folder Include="data\" />
-    <Folder Include="data\Stored Procedures\" />
-    <Folder Include="Security\" />
     <Folder Include="PublishProfiles" />
     <Folder Include="Scripts" />
   </ItemGroup>
@@ -105,17 +102,15 @@
     <Build Include="dbo\Views\V_CustomerPromotion.sql" />
     <Build Include="dbo\Views\V_OnlineSalesOrder.sql" />
     <Build Include="dbo\Stored Procedures\P_FactStrategyPlan.sql" />
-    <Build Include="data\Stored Procedures\Populate_dbo_DimDate.sql" />
-    <Build Include="data\Stored Procedures\Populate_dbo_DimEmployee.sql" />
-    <Build Include="data\Stored Procedures\Populate_dbo_DimEntity.sql" />
     <Build Include="dbo\Stored Procedures\P_FactSalesQuota.sql" />
-    <Build Include="Security\data.sql" />
-    <Build Include="data\Stored Procedures\Populate_All.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PublishProfiles\ContosoRetailDW-dev.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\PostDeployment.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PreDeploy Include="Scripts\PreDeployment.sql" />
   </ItemGroup>
 </Project>

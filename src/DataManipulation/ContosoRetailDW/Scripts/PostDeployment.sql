@@ -10,7 +10,6 @@ Post-Deployment Script Template
 --------------------------------------------------------------------------------------
 */
 
-EXEC [data].[Populate_All];
 
 
 -------------------------This is the end of Post-Depoloyment script -------------------

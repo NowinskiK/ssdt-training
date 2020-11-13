@@ -10,13 +10,7 @@
     <DatabaseEdition>Basic</DatabaseEdition>
     <DatabaseServiceObjective>Basic</DatabaseServiceObjective>
     <DatabaseMaximumSize>2</DatabaseMaximumSize>
+    <IncludeTransactionalScripts>False</IncludeTransactionalScripts>
+    <ScriptDatabaseOptions>False</ScriptDatabaseOptions>
   </PropertyGroup>
-  <ItemGroup>
-    <SqlCmdVariable Include="CRM">
-      <Value>CRM</Value>
-    </SqlCmdVariable>
-    <SqlCmdVariable Include="roUser">
-      <Value>kamiln</Value>
-    </SqlCmdVariable>
-  </ItemGroup>
 </Project>
