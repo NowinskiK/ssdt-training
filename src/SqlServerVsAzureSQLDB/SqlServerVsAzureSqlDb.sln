@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30128.74
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "ContosoRetailDW", "ContosoRetailDW\ContosoRetailDW.sqlproj", "{EC7AB2E6-E175-41BC-B509-FDA8300A1E53}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "CRM", "CRM\CRM.sqlproj", "{F66B3A41-7BF4-4CF6-9769-34D26466E1FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC7AB2E6-E175-41BC-B509-FDA8300A1E53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC7AB2E6-E175-41BC-B509-FDA8300A1E53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC7AB2E6-E175-41BC-B509-FDA8300A1E53}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EC7AB2E6-E175-41BC-B509-FDA8300A1E53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC7AB2E6-E175-41BC-B509-FDA8300A1E53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC7AB2E6-E175-41BC-B509-FDA8300A1E53}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F66B3A41-7BF4-4CF6-9769-34D26466E1FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F66B3A41-7BF4-4CF6-9769-34D26466E1FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F66B3A41-7BF4-4CF6-9769-34D26466E1FD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F66B3A41-7BF4-4CF6-9769-34D26466E1FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F66B3A41-7BF4-4CF6-9769-34D26466E1FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F66B3A41-7BF4-4CF6-9769-34D26466E1FD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00A6C09D-2D66-4817-852B-E79D5805AD7F}
+	EndGlobalSection
+EndGlobal
