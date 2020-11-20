@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>ContosoRetailDW</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{4f127780-f9d6-454d-bab5-c31dddb04b36}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>ContosoRetailDW</RootNamespace>
+    <AssemblyName>ContosoRetailDW</AssemblyName>
+    <ModelCollation>1033,CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
+    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <ValidateCasingOnIdentifiers>False</ValidateCasingOnIdentifiers>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatTSqlWarningsAsErrors>True</TreatTSqlWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="dbo\" />
+    <Folder Include="dbo\Tables\" />
+    <Folder Include="audit\" />
+    <Folder Include="audit\Tables\" />
+    <Folder Include="dbo\Views\" />
+    <Folder Include="dbo\Stored Procedures\" />
+    <Folder Include="data\" />
+    <Folder Include="data\Stored Procedures\" />
+    <Folder Include="Security\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Tables\DimMachine.sql" />
+    <Build Include="dbo\Tables\DimProductSubcategory.sql" />
+    <Build Include="dbo\Tables\DimProduct.sql" />
+    <Build Include="dbo\Tables\DimProductCategory.sql" />
+    <Build Include="dbo\Tables\DimEntity.sql" />
+    <Build Include="dbo\Tables\DimSalesTerritory.sql" />
+    <Build Include="dbo\Tables\DimCurrency.sql" />
+    <Build Include="dbo\Tables\DimOutage.sql" />
+    <Build Include="dbo\Tables\DimChannel.sql" />
+    <Build Include="dbo\Tables\DimScenario.sql" />
+    <Build Include="dbo\Tables\DimAccount.sql" />
+    <Build Include="dbo\Tables\DimPromotion.sql" />
+    <Build Include="dbo\Tables\DimCustomer.sql" />
+    <Build Include="dbo\Tables\DimEmployee.sql" />
+    <Build Include="dbo\Tables\DimDate.sql" />
+    <Build Include="audit\Tables\DimChannel.sql" />
+    <Build Include="dbo\Tables\FactExchangeRate.sql" />
+    <Build Include="dbo\Tables\FactITMachine.sql" />
+    <Build Include="dbo\Tables\FactITSLA.sql" />
+    <Build Include="dbo\Tables\FactOnlineSales.sql" />
+    <Build Include="dbo\Tables\FactStrategyPlan.sql" />
+    <Build Include="dbo\Tables\FactSales.sql" />
+    <Build Include="dbo\Tables\FactInventory.sql" />
+    <Build Include="dbo\Tables\FactSalesQuota.sql" />
+    <Build Include="dbo\Tables\DimStore.sql" />
+    <Build Include="dbo\Tables\DimGeography.sql" />
+    <Build Include="dbo\Views\V_ProductForecast.sql" />
+    <Build Include="dbo\Views\V_CustomerOrders.sql" />
+    <Build Include="dbo\Views\V_OnlineSalesOrderDetail.sql" />
+    <Build Include="dbo\Views\V_Customer.sql" />
+    <Build Include="dbo\Views\V_CustomerPromotion.sql" />
+    <Build Include="dbo\Views\V_OnlineSalesOrder.sql" />
+    <Build Include="dbo\Stored Procedures\P_FactStrategyPlan.sql" />
+    <Build Include="dbo\Stored Procedures\Populate_dbo_DimProduct.sql" />
+    <Build Include="data\Stored Procedures\Populate_dbo_DimDate.sql" />
+    <Build Include="data\Stored Procedures\Populate_dbo_DimEmployee.sql" />
+    <Build Include="data\Stored Procedures\Populate_dbo_DimEntity.sql" />
+    <Build Include="data\Stored Procedures\Populate_dbo_DimProduct.sql" />
+    <Build Include="dbo\Stored Procedures\P_FactSalesQuota.sql" />
+    <Build Include="Security\audit.sql" />
+    <Build Include="Security\data.sql" />
+  </ItemGroup>
+</Project>
