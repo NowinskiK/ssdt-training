@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Job>
+    <Name>PopulateData</Name>
+    <Owner>DEV19\Administrator</Owner>
+    <Description>No description available.</Description>
+    <Enabled>True</Enabled>
+    <Category Include="ServerJobCategory">
+        <Value>[Uncategorized (Local)]</Value>
+    </Category>
+    <TargetServers>
+        <TargetServer Include="DEV19">
+            <Value>DEV19</Value>
+        </TargetServer>
+    </TargetServers>
+    <Operator>
+        <Name />
+        <Email />
+        <NetSend />
+        <Page />
+    </Operator>
+    <Notification>
+        <SendEmail>Never</SendEmail>
+        <SendEventLog>OnFailure</SendEventLog>
+        <SendPage>Never</SendPage>
+        <SendNetSend>Never</SendNetSend>
+    </Notification>
+    <Schedules />
+    <Steps>
+        <Step>
+            <Name>Populate4Tables</Name>
+            <SubSystem>TransactSql</SubSystem>
+            <RunAs Include="RunAsAccount">
+                <Name />
+            </RunAs>
+            <Command>EXECUTE [data].[Populate_dbo_DimDate]
+EXECUTE [data].[Populate_dbo_DimProduct]
+EXECUTE [data].[Populate_dbo_DimEntity]
+EXECUTE [data].[Populate_dbo_DimEmployee]
+</Command>
+            <OnSuccessAction>QuitWithSuccess</OnSuccessAction>
+            <OnFailAction>QuitWithFailure</OnFailAction>
+            <RetryAttempts>0</RetryAttempts>
+            <RetryInterval>0</RetryInterval>
+            <Databasename>ContosoRetailDW</Databasename>
+        </Step>
+    </Steps>
+</Job>

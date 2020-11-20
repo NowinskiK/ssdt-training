@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<Job>
+    <Name>SyncCustomers</Name>
+    <Owner>DEV19\Administrator</Owner>
+    <Description>No description available.</Description>
+    <Enabled>True</Enabled>
+    <Category Include="ServerJobCategory">
+        <Value>[Uncategorized (Local)]</Value>
+    </Category>
+    <TargetServers>
+        <TargetServer Include="DEV19">
+            <Value>DEV19</Value>
+        </TargetServer>
+    </TargetServers>
+    <Operator>
+        <Name />
+        <Email />
+        <NetSend />
+        <Page />
+    </Operator>
+    <Notification>
+        <SendEmail>Never</SendEmail>
+        <SendEventLog>Never</SendEventLog>
+        <SendPage>Never</SendPage>
+        <SendNetSend>Never</SendNetSend>
+    </Notification>
+    <Schedules />
+    <Steps>
+        <Step>
+            <Name>Sync Customer Table</Name>
+            <SubSystem>TransactSql</SubSystem>
+            <RunAs Include="RunAsAccount">
+                <Name />
+            </RunAs>
+            <Command>EXEC dbo.uspSyncCustomers;</Command>
+            <OnSuccessAction>QuitWithSuccess</OnSuccessAction>
+            <OnFailAction>QuitWithFailure</OnFailAction>
+            <RetryAttempts>0</RetryAttempts>
+            <RetryInterval>0</RetryInterval>
+            <Databasename>ContosoRetailDW</Databasename>
+        </Step>
+    </Steps>
+</Job>
