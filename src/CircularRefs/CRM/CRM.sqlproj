@@ -71,8 +71,6 @@
     <Build Include="dbo\Tables\Channel.sql" />
     <Build Include="dbo\Tables\Customer.sql" />
     <Build Include="dbo\Views\vCustomer.sql" />
-    <Build Include="Security\MSmerge_PAL_role.sql" />
-    <Build Include="Security\MSmerge_B1D52389A00449D9840C1A946F8FA207.sql" />
     <Build Include="dbo\Stored Procedures\GetCustomerDetail.sql" />
     <Build Include="data\Stored Procedures\PopulateAction_v3.sql" />
     <Build Include="dbo\Stored Procedures\PopulateAction.sql" />
@@ -85,6 +83,5 @@
     <Build Include="dbo\Stored Procedures\TempDemo2.sql" />
     <Build Include="dbo\Stored Procedures\TempDemo1.sql" />
     <Build Include="Security\data.sql" />
-    <Build Include="Security\MSmerge_PAL_role_1.sql" />
   </ItemGroup>
 </Project>
