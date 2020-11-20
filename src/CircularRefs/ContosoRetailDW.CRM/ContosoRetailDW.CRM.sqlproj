@@ -3,17 +3,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>CRM</Name>
+    <Name>ContosoRetailDW.CRM</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{4f5edc9f-fab4-4488-9731-b692f5caf4d5}</ProjectGuid>
+    <ProjectGuid>{0c524afb-4066-4f07-a046-0bf83c36af06}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
-    <RootNamespace>CRM</RootNamespace>
-    <AssemblyName>CRM</AssemblyName>
-    <ModelCollation>1033,CI</ModelCollation>
+    <RootNamespace>ContosoRetailDW.CRM</RootNamespace>
+    <AssemblyName>ContosoRetailDW.CRM</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -22,8 +22,7 @@
     <SqlServerVerification>False</SqlServerVerification>
     <IncludeCompositeObjects>True</IncludeCompositeObjects>
     <TargetDatabaseSet>True</TargetDatabaseSet>
-    <DefaultCollation>SQL_Latin1_General_CP1_CI_AS</DefaultCollation>
-    <DefaultFilegroup>PRIMARY</DefaultFilegroup>
+    <ValidateCasingOnIdentifiers>False</ValidateCasingOnIdentifiers>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <OutputPath>bin\Release\</OutputPath>
@@ -47,6 +46,7 @@
     <DefineTrace>true</DefineTrace>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <TreatTSqlWarningsAsErrors>True</TreatTSqlWarningsAsErrors>
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
@@ -58,23 +58,36 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
-    <Folder Include="dbo\" />
-    <Folder Include="dbo\Tables\" />
-    <Folder Include="dbo\Views\" />
-    <Folder Include="Security\" />
-    <Folder Include="dbo\Stored Procedures\" />
-    <Folder Include="data\" />
-    <Folder Include="data\Stored Procedures\" />
+    <Folder Include="dbo" />
+    <Folder Include="dbo\Stored Procedures" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\Action.sql" />
-    <Build Include="dbo\Tables\Channel.sql" />
-    <Build Include="dbo\Tables\Customer.sql" />
-    <Build Include="dbo\Views\vCustomer.sql" />
-    <Build Include="dbo\Stored Procedures\GetCustomerDetail.sql" />
-    <Build Include="data\Stored Procedures\PopulateAction_v3.sql" />
-    <Build Include="data\Stored Procedures\PopulateAction_v2.sql" />
-    <Build Include="data\Stored Procedures\PopulateAction_v1.sql" />
-    <Build Include="Security\data.sql" />
+    <ProjectReference Include="..\CRM\CRM.sqlproj">
+      <Name>CRM</Name>
+      <Project>{4f5edc9f-fab4-4488-9731-b692f5caf4d5}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>CRM</DatabaseSqlCmdVariable>
+    </ProjectReference>
+    <ProjectReference Include="..\ContosoRetailDW\ContosoRetailDW.sqlproj">
+      <Name>ContosoRetailDW</Name>
+      <Project>{4f127780-f9d6-454d-bab5-c31dddb04b36}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="CRM">
+      <DefaultValue>CRM</DefaultValue>
+      <Value>$(SqlCmdVar__1)</Value>
+    </SqlCmdVariable>
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="dbo\Stored Procedures\Populate_DimChannel.sql" />
+    <Build Include="dbo\Stored Procedures\setCustomerName.sql" />
+    <Build Include="dbo\Stored Procedures\getCustomerInfo.sql">
+      <AnsiNulls>Off</AnsiNulls>
+      <QuotedIdentifier>Off</QuotedIdentifier>
+    </Build>
   </ItemGroup>
 </Project>
