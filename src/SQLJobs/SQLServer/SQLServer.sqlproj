@@ -60,10 +60,11 @@
     <Folder Include="Deployment" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="SQLJobs\SyncCustomers.sql" />
-    <None Include="SQLJobs\PopulateData.sql" />
+    <PostDeploy Include="Deployment\PostDeployment.sql" />
   </ItemGroup>
   <ItemGroup>
-    <PostDeploy Include="Deployment\PostDeployment.sql" />
+    <None Include="SQLJobs\PopulateData.sql" />
+    <None Include="SQLJobs\SyncCustomers.sql" />
+    <None Include="Deployment\SQLServer.publish.xml" />
   </ItemGroup>
 </Project>
