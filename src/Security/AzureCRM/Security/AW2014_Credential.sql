@@ -1,0 +1,4 @@
+﻿CREATE DATABASE SCOPED CREDENTIAL AW2014_Credential
+WITH
+  IDENTITY = 'extROUser' ,
+  SECRET = 'ReeA1frejgiWeZjg' ;
