@@ -43,7 +43,7 @@ Czas trwania: 89 min.
 * F. Nowa gałąź (branch) developera
 * G. Pull Request oraz MERGE do gałęzi master
 * H. Podsumowanie
-* I .Quiz
+* I. Quiz
 
 ## Moduł 3: Praca z SSDT w Visual Studio
 Czas trwania: 68 min.
@@ -104,25 +104,25 @@ Czas trwania: 159 min.
 * F. Quiz
 
 ## Moduł 8: Tips, Tricks & Troubleshooting
-Czas trwania: ... min.
+Czas trwania: 143 min.
 * A. Wprowadzenie
-* B. Skuteczne wyszukiwanie błędów
-* C. Referencje do baz systemowych
-* D. Pakiety SSIS i referencje do bazy SSISDB (Catalog)
-* E. Odwołanie do tej samej bazy danych
-* F. Przebudowywanie dużych indeksów
-* G. Rozbijanie kolumny z danymi
-* H. SQL Server On-Prem VS Azure
+* B. [Skuteczne wyszukiwanie błędów](../src/Tips&Tricks/)
+* C. [Referencje do baz systemowych](../src/Tips&Tricks/)
+* D. [Pakiety SSIS i referencje do bazy SSISDB (Catalog)](../src/SSISDB/)
+* E. [Odwołanie do tej samej bazy danych](../src/Tips&Tricks/)
+* F. [Przebudowywanie dużych indeksów](../src/Indexes/)
+* G. [Rozbijanie kolumny z danymi](../src/DataManipulation/)
+* H. [SQL Server On-Prem VS Azure](../src/SqlServerVsAzureSQLDB/)
 * I. Podsumowanie
 * J. Quiz
 
 ## Moduł 9: Zaawansowane
-Czas trwania: ... min.
+Czas trwania: 148 min.
 * A. Wprowadzenie
-* B. Odwołania cykliczne 
-* C. Security & DevSecOps
-* D. SQL Agent Jobs
-* E. Publikacja wybiórcza (selektywna)
+* B. [Odwołania cykliczne](../src/CircularRefs/)
+* C. [Security & DevSecOps](../src/Security/)
+* D. [SQL Agent Jobs](../src/SQLJobs/)
+* E. [Publikacja wybiórcza (selektywna)](../src/sqlpackage-selective/)
 * F. Podsumowanie
 * G. Quiz
 
