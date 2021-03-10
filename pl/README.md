@@ -12,7 +12,7 @@ SSDT jest świetnym narzędziem jeśli szukasz rozwiązania do zarządzania i wd
 
 Pracowałem i pracuję z SSDT od wielu lat przy wielu projektach. To repozytorium zawiera kod przedstawiony w kompleksowym, autorskim szkoleniu, które przygotowałem w 2020 roku.  
 Odwiedź stronę kursu aby dowiedzieć się więcej:  
-**Edycja Polska:** [Projekty bazodanowe w SQL Server Data Tools](https://www.kursysql.pl/szkolenie-projekty-bazodanowe-w-sql-server-data-tools/)  
+**Edycja Polska:** [Projekty bazodanowe w SQL Server Data Tools SSDT](https://learn.sqlplayer.net/projekty-bazodanowe-w-sql-server-data-tools-ssdt)  
 **Edycja Angielska:** (patrz niżej)
 
 W pierwszej kolejności zdecydowałem przygotować polską wersję językową tego kursu.  
