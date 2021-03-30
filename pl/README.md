@@ -19,6 +19,8 @@ W pierwszej kolejności zdecydowałem przygotować polską wersję językową te
 \* Wersja angielska będzie dostępna w czerwcu 2021. 
 W międzyczasie, [zapisz się na bezpłatne materiały](https://learn.sqlplayer.net/database-projects-with-ssdt-dacpac) i wskazówki wysyłane przez 8 tygodni (raz na tydzień).  
 
+[![SSDT banner](./../images/SSDT_Blog_Banner_ver1.png)](https://learn.sqlplayer.net/database-projects-with-ssdt-dacpac)
+
 Powodzenia!  
 *Kamil*
 

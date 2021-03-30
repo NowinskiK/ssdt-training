@@ -19,6 +19,8 @@ The first edition (Polish language only) has been released in 2020.
 \* The English edition gonna be available in June 2021. 
 In the meantime, [sign up for free materials](https://learn.sqlplayer.net/database-projects-with-ssdt-dacpac) and tips for 8 weeks.
 
+[![SSDT banner](./images/SSDT_Blog_Banner_ver1.png)](https://learn.sqlplayer.net/database-projects-with-ssdt-dacpac)
+
 Enjoy!  
 *Kamil*
 
