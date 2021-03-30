@@ -13,10 +13,11 @@ SSDT is a great tool if you're looking for a solution to manage and deploy your 
 I've been working with SSDT for many years now. This repository contains a code for all demo of comprehensive online-course I prepared this year (2020).  
 Take a look if you're interested. The whole course is available here:  
 **Polish edition:** [Projekty bazodanowe w SQL Server Data Tools SSDT](https://learn.sqlplayer.net/projekty-bazodanowe-w-sql-server-data-tools-ssdt)  
-**English edition:** (see below)
+**English edition:** [Database projects with SQL Server Data Tools (SSDT)](https://learn.sqlplayer.net/database-projects-with-ssdt-dacpac) *
 
-The first edition is in Polish language only.  
-The English edition gonna be available next (2021) year. 
+The first edition (Polish language only) has been released in 2020.  
+\* The English edition gonna be available in June 2021. 
+In the meantime, [sign up for free materials](https://learn.sqlplayer.net/database-projects-with-ssdt-dacpac) and tips for 8 weeks.
 
 Enjoy!  
 *Kamil*
