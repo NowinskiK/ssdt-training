@@ -19,7 +19,7 @@ The first edition (Polish language only) has been released in 2020.
 \* The English edition gonna be available in July 2021. 
 In the meantime, [sign up for free materials](https://learn.sqlplayer.net/ssdt-tips) and tips for 8 weeks.
 
-[![SSDT banner](./images/SSDT_Blog_Banner_ver1.png)](https://learn.sqlplayer.net/database-projects-with-ssdt-dacpac)
+[![SSDT banner](./images/SSDT_Blog_Banner_ver1.png)](https://learn.sqlplayer.net/ssdt-tips)
 
 Enjoy!  
 *Kamil*
@@ -29,12 +29,12 @@ Enjoy!
 
 ## Module 1: Introduction & Installation
 Duration: 83 min.
-* A. Welcome and introduction
+* A. Welcome and introduction (📽️ [Free lesson](https://learn.sqlplayer.net/courses/database-projects-with-ssdt-dacpac/658130-module-1/2127229-welcome-and-introduction))
 * B. Installing SSDT
 * C. Two approaches: State vs Migration
 * D. Tools comparison
 * E. Automation, DevOps, CI/CD
-* F. Summary
+* F. Summary (📽️ [Free lesson](https://learn.sqlplayer.net/courses/database-projects-with-ssdt-dacpac/658130-module-1/2127258-summary))
 * G. Quiz
 
 ## Module 2: Versioning fundamentals with GIT
@@ -42,7 +42,7 @@ Duration: 89 min.
 * A. Git Mini-Course - Introduction
 * B. Installation of utilities
 * C. Project cloning
-* D. Create a new project
+* D. Create a new project (📽️ [Free lesson](https://learn.sqlplayer.net/courses/database-projects-with-ssdt-dacpac/729810-module-2/2127847-create-a-new-project))
 * E. Basic commands (PULL, COMMIT, PUSH)
 * F. New developer branch
 * G. Pull Request and MERGE to the master branch
@@ -55,12 +55,12 @@ Duration: 68 min.
 * B. [Create and work with a database project](/src/Introduction/)
 * C. [Variables in the project and their roles](/src/Variables/)
 * D. Design properties and database settings
-* E. Summary
+* E. Summary  (📽️ [Free lesson](https://learn.sqlplayer.net/courses/database-projects-with-ssdt-dacpac/734802-module-3/2164294-summary))
 * F. Quiz
 
 ## Module 4: Import of an existing database
 Duration: 108 min.
-* A. Introduction
+* A. Introduction       (📽️ [Free lesson](https://learn.sqlplayer.net/courses/database-projects-with-ssdt-dacpac/734803-module-4/2164464-introduction))
 * B. [Database import directly from SQL server](/src/Import/)
 * C. Database import from script and DACPAC file
 * D. [Database references](/src/References/)
@@ -70,7 +70,7 @@ Duration: 108 min.
 
 ## Module 5: Comparing and Publishing
 Duration: 187 min.
-* A. Introduction
+* A. Introduction     (📽️ [Free lesson](https://learn.sqlplayer.net/courses/database-projects-with-ssdt-dacpac/734804-module-5/2281366-introduction))
 * B. [Tools: Schema Compare](/src/Compare/)
 * C. [Snapshot of database project](/src/Compare/WideWorldImporters/Snapshots/)
 * D. Tools: Data Compare
@@ -84,9 +84,9 @@ Duration: 187 min.
 
 ## Module 6: Azure DevOps and CI/CD
 Duration: 152 min.
-* A. Introduction
+* A. Introduction  (📽️ [Free lesson](https://learn.sqlplayer.net/courses/database-projects-with-ssdt-dacpac/734805-module-6/2417617-introduction))
 * B. [Publishing with Sqlpackage (CMD)](/src/sqlpackage/demo1.cmd)
-* C. [Publishing with Sqlpackage (PowerShell)](/src/sqlpackage/demo2.ps1)
+* C. [Publishing with Sqlpackage (PowerShell)](/src/sqlpackage/demo2.ps1)   (📽️ [Free lesson](https://learn.sqlplayer.net/courses/database-projects-with-ssdt-dacpac/734805-module-6/2417631-publishing-with-sqlpackage-powershell))
 * D. [Generating the script and report (PowerShell)](/src/sqlpackage/demo3.ps1)
 * E. Building CI / CD in Azure DevOps
 * F. Releasing a new version (Release)
