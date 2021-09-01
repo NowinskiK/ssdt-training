@@ -10,14 +10,15 @@ SSDT is a great tool if you're looking for a solution to manage and deploy your 
 * Understand the concept and use SQLPackage
 * Build end-to-end CI/CD process
 
-I've been working with SSDT for many years now. This repository contains a code for all demo of comprehensive online-course I prepared this year (2020).  
+I've been working with SSDT for many years now. This repository contains a code for all demo of comprehensive online-course I prepared in 2020.  
 Take a look if you're interested. The whole course is available here:  
 **Polish edition:** [Projekty bazodanowe w SQL Server Data Tools SSDT](https://learn.sqlplayer.net/projekty-bazodanowe-w-sql-server-data-tools-ssdt)  
-**English edition:** [Database projects with SQL Server Data Tools (SSDT)](https://learn.sqlplayer.net/database-projects-with-ssdt-dacpac) *
+**English edition:** [Database projects with SQL Server Data Tools (SSDT)](https://learn.sqlplayer.net/database-projects-with-ssdt-dacpac)
 
 The first edition (Polish language only) has been released in 2020.  
-\* The English edition gonna be available in July 2021. 
-In the meantime, [sign up for free materials](https://learn.sqlplayer.net/ssdt-tips) and tips for 8 weeks.
+The first English edition was released on 3th of July 2021.  
+The cost of the 20-hour course is $195.  
+If you not ready to buy an entire course, [sign up for free materials](https://learn.sqlplayer.net/ssdt-tips) and tips for 8 weeks.
 
 [![SSDT banner](./images/SSDT_Blog_Banner_ver1.png)](https://learn.sqlplayer.net/ssdt-tips)
 
@@ -96,7 +97,7 @@ Duration: 152 min.
 * J. Quiz
 
 ## Module 7: Unit tests
-Duration: 159 min.
+Duration: 156 min.
 * A. Introduction
   * Unit Test
   * Types of tests and tools
@@ -108,8 +109,8 @@ Duration: 159 min.
 * F. Quiz
 
 ## Module 8: Tips, Tricks & Troubleshooting
-Duration: 143 min.
-* A. Introduction
+Duration: 150 min.
+* A. Introduction (📽️ [Free lesson](https://learn.sqlplayer.net/courses/database-projects-with-ssdt-dacpac/734807-module-8/2556118-introduction))
 * B. [Effective troubleshooting](/src/Tips&Tricks/)
 * C. [References to system databases](/src/Tips&Tricks/)
 * D. [SSIS packages and references to SSISDB database (Catalog)](/src/SSISDB/)
@@ -121,8 +122,8 @@ Duration: 143 min.
 * J. Quiz
 
 ## Module 9: Advanced
-Duration: 148 min.
-* A. Introduction
+Duration: 149 min.
+* A. Introduction (📽️ [Free lesson](https://learn.sqlplayer.net/courses/database-projects-with-ssdt-dacpac/734808-module-9/2748809-introduction))
 * B. [Circular references](/src/CircularRefs/)
 * C. [Security & DevSecOps](/src/Security/)
 * D. [SQL Agent Jobs](/src/SQLJobs/)
