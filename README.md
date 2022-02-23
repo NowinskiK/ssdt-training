@@ -18,6 +18,14 @@ Take a look if you're interested. The whole course is available here:
 The first edition (Polish language only) has been released in 2020.  
 The first English edition was released on 3th of July 2021.  
 The cost of the 20-hour course is $195.  
+[![SSDT Full course banner](./images/Full_SSDT_Cover_EN.png)](https://learn.sqlplayer.net/database-projects-with-ssdt-dacpac)
+
+At the beginning of year 2022, compacted version of English edition course appeared.  
+"Essentials of database projects with SSDT" costs **$99 only**.  
+[![SSDT Full course banner](./images/Essential_SSDT_Cover_EN.png)](https://learn.sqlplayer.net/ssdt-essentials)
+
+> The differences between these two editions are described in [this blog post](https://sqlplayer.net/2022/01/database-projects-with-sql-server-data-tools-ssdt/).
+
 If you not ready to buy an entire course, [sign up for free materials](https://learn.sqlplayer.net/ssdt-tips) and tips for 8 weeks.
 
 [![SSDT banner](./images/SSDT_Blog_Banner_ver1.png)](https://learn.sqlplayer.net/ssdt-tips)
