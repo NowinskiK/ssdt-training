@@ -4,6 +4,8 @@
 
 Pełen kod prezentowany podczas autorskiego treningu online dot. SSDT.  
 
+[![SSDT banner](./../images/SSDT_Blog_Banner_ver1_1.png)](https://learn.azureplayer.net/database-projects-with-ssdt-dacpac)
+
 SSDT jest świetnym narzędziem jeśli szukasz rozwiązania do zarządzania i wdrażania baz danych SQL Server (on-prem) oraz baz danych Azure SQL. Jest to darmowe narzędzie od Microsoft'u (wchodzące w skład Visual Studio), ale czasem nie wiemy jak zacząć pracę z nim oraz jak:
 * Importować istniejące bazy danych z serwerów fizycznych
 * Używać pliku DACPAC i czym on jest?
@@ -18,9 +20,12 @@ Odwiedź stronę kursu aby dowiedzieć się więcej:
 W pierwszej kolejności zdecydowałem przygotować polską wersję językową tego kursu, która została opublikowana pod koniec 2020 roku.  
 Pierwsze wydanie angielskie ukazało się 3 lipca 2021 roku.  
 Cena 20-godzinnego kursu to $195.  
-Jeśli nie jesteś gotów/gotowa zakupić pełny kurs, [zapisz się na bezpłatne materiały](https://learn.azureplayer.net/database-projects-with-ssdt-dacpac) i wskazówki wysyłane przez 8 tygodni (raz na tydzień).  
+[![SSDT Full course banner](./../images/Full_SSDT_Cover_PL.png)](https://learn.azureplayer.net/projekty-bazodanowe-w-sql-server-data-tools-ssdt)
 
-[![SSDT banner](./../images/SSDT_Blog_Banner_ver1.png)](https://learn.sqlplayer.net/database-projects-with-ssdt-dacpac)
+
+Jeśli nie jesteś gotów/gotowa zakupić pełny kurs, [zapisz się na bezpłatne materiały](https://learn.azureplayer.net/ssdt-tips) i wskazówki wysyłane przez 8 tygodni (raz na tydzień).  
+
+[![SSDT banner](./../images/SSDT%20-%20Tips%20&%20Cheat%20sheets%20-%20sign%20up%20for%20free.png)](https://learn.azureplayer.net/ssdt-tips)
 
 Powodzenia!  
 *Kamil*

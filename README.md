@@ -4,6 +4,8 @@
 
 All code from full ssdt training.  
 
+[![SSDT banner](./images/SSDT_Blog_Banner_ver1_1.png)](https://learn.azureplayer.net/database-projects-with-ssdt-dacpac)
+
 SSDT is a great tool if you're looking for a solution to manage and deploy your SQL Server database or Azure SQL databases. It's a free tool from Microsoft (provided within Visual Studio), but sometimes we don't know how to start and how to:  
 * Import existing database(s) from a physical server
 * Use DACPAC file and what's that?
@@ -26,9 +28,9 @@ At the beginning of year 2022, compacted version of English edition course appea
 
 > The differences between these two editions are described in [this blog post](https://azureplayer.net/2022/01/database-projects-with-sql-server-data-tools-ssdt/).
 
-If you not ready to buy an entire course, [sign up for free materials](https://learn.azureplayer.net/ssdt-tips) and tips for 8 weeks.
+If you are not ready to buy an entire course, [sign up for free materials](https://learn.azureplayer.net/ssdt-tips) and tips for 8 weeks.
 
-[![SSDT banner](./images/SSDT_Blog_Banner_ver1.png)](https://learn.azureplayer.net/ssdt-tips)
+[![SSDT banner](./images/SSDT%20-%20Tips%20&%20Cheat%20sheets%20-%20sign%20up%20for%20free.png)](https://learn.azureplayer.net/ssdt-tips)
 
 Enjoy!  
 *Kamil*
